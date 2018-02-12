@@ -1,8 +1,8 @@
-FROM centos:7.3.1611
+FROM centos:7.4.1708
 
-MAINTAINER Jasonli
+MAINTAINER iceyao
 
-ENV COBBLER_VERSION 2.8.0
+ENV COBBLER_VERSION 2.8.2
 
 RUN yum -y install wget epel-release && \
 wget -O /etc/yum.repos.d/cobbler28.repo http://download.opensuse.org/repositories/home:/libertas-ict:/cobbler28/CentOS_7/home:libertas-ict:cobbler28.repo && \
