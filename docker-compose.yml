@@ -1,5 +1,5 @@
 cobbler:
-  image: iceyao/docker-cobbler
+    image: iceyao/docker-cobbler:v1.8.2
   volumes:
     - /mnt:/mnt:ro
   env_file: cobbler.env
