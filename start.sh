@@ -45,7 +45,7 @@ else
         /usr/bin/cobblerd
 
         cobbler sync
-        cobbler get-loaders
+#        cobbler get-loaders
 
         pkill cobblerd
         pkill httpd
