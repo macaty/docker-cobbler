@@ -20,3 +20,4 @@
 2. 把系统镜像挂载到本机的`/mnt`目录下`mount -t iso9660 -o loop,ro /yourpath/to/CentOS-7-x86_64-1611.iso /mnt`
 3. 运行cobbler容器：`docker-compose up -d`
 4. 进入cobbler容器，配置装机系统：`docker exec -it dockercobbler_cobbler_1 bash`
+5. 界面访问: `http://<server_ip>:8888/cobbler_web`
