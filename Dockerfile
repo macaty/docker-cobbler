@@ -10,6 +10,7 @@ yum -y install cobbler tftp-server dhcp openssl cobbler-web supervisor && \
 yum -y update && \
 yum clean all
 
+ADD loaders.tar.xz /var/lib/cobbler/loaders/
 ADD supervisord.d/conf.ini /etc/supervisord.d/conf.ini
 ADD start.sh /start.sh
 RUN chmod +x /start.sh
